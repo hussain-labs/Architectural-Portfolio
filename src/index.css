@@ -1,0 +1,270 @@
+@import "tailwindcss";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add this to your existing index.css file */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-load {
+  /* This class will apply the animation */
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Add this to the bottom of your index.css file */
+
+.animated-background {
+  /* Define a gradient with a few more colors for a smoother effect */
+  background: linear-gradient(45deg, #e0f7fa, #b3e5fc, #e1f5fe, #81d4fa);
+  /* Make the background size much larger than the element */
+  background-size: 400% 400%;
+  /* Apply the animation */
+  animation: animate-gradient 15s ease infinite;
+}
+
+@keyframes animate-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Add this to the bottom of your index.css file */
+
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 0 0 0px 0px rgba(59, 130, 246, 0.4); /* Tailwind's blue-500 with alpha */
+  }
+  50% {
+    box-shadow: 0 0 15px 5px rgba(59, 130, 246, 0.7); /* Stronger glow */
+  }
+  100% {
+    box-shadow: 0 0 0px 0px rgba(59, 130, 246, 0.4);
+  }
+}
+
+.image-glow {
+  animation: glow-pulse 3s infinite alternate ease-in-out; /* 3 seconds, repeats, reverses, smooth */
+}
+
+/* Add this to the bottom of your index.css file */
+@keyframes animate-text-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* For the text color animation */
+.text-gradient-animated {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: animate-text-gradient 5s ease-in-out infinite;
+}
+
+/* #about h2.text-gradient-animated {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: animate-text-gradient 5s ease-in-out infinite;
+} */
+
+/* Make sure this is correct in your index.css file */
+
+/* .text-gradient-animated {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;  
+  animation: animate-text-gradient 5s ease-in-out infinite;
+} */
+
+.text-gradient-animated-hero {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec48d9, #3b82f6);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Add this to your index.css file */
+
+.text-gradient-paragraph {
+  /* A subtle gradient from a darker to a lighter gray */
+  background: linear-gradient(90deg, #374151, #6b7280); /* gray-700 to gray-500 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+/* For the blinking cursor effect */
+.blinking-cursor {
+  font-weight: 400;
+  color: #60a5fa; /* A light blue color */
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* Add this to the bottom of your index.css file */
+
+/* 1. Animation for the whole navbar sliding down */
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.7s ease-out forwards;
+}
+
+/* 2. Animation for the mobile menu items */
+@keyframes fade-in-up-nav {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.menu-item-animate {
+  /* This animation will be applied to each mobile menu item */
+  animation: fade-in-up-nav 0.5s ease-out forwards;
+}
+
+/* Add this to your index.css file */
+
+.button-gradient-animated {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #3b82f6); /* blue-600 to violet-700 */
+  background-size: 200% 200%;
+  animation: animate-text-gradient 4s ease-in-out infinite; /* Reusing the keyframes */
+}
+
+/* This class will apply the animation */
+.section-item-animate {
+  animation: fade-in-up-nav 0.8s ease-out forwards;
+}
+
+
+/* Add this to your index.css file */
+.hover-text-gradient:hover{
+  background-image: linear-gradient(90deg, #3b82f6, #a855f7); /* blue-500 to purple-600 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+.text-gradient-static {
+  background-image: linear-gradient(90deg, #3b82f6, #a855f7); /* blue-500 to purple-600 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600; /* semibold */
+}
+
+.bg-gradient-static {
+  background-image: linear-gradient(90deg, #3b82f6, #a855f7); /* blue-500 to purple-600 */
+}
+
+/* Add this to the bottom of your index.css file */
+
+.other-skill-text-gradient {
+  background-image: linear-gradient(90deg, #3b82f6, #a855f7); /* Same gradient as the percentages */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+/* Add this to the bottom of your index.css file */
+
+.other-skill-text-gradient:hover {
+  background-image: linear-gradient(90deg, #3b82f6, #a855f7); /* Your theme gradient */
+  /* color: white; */
+  color: transparent;
+  border-color: transparent; /* Makes the gradient fill the entire space */
+}
+
+
+/* Add this to the bottom of your index.css file */
+
+/* For the social media icons */
+.social-icon-themed {
+  /* position: relative; */
+  /* background-color: white;  */
+  color: blueviolet;
+  border: 2px solid blueviolet; 
+}
+
+/* This pseudo-element creates the gradient border */
+.social-icon-themed::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  padding: 2px;
+  border-radius: 6px; 
+  background: linear-gradient(90deg, #3b82f6, #a855f7); 
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+/* This handles the hover effect */
+.social-icon-themed:hover {
+  background-image: linear-gradient(90deg, #3b82f6, #a855f7);
+  -webkit-background-clip: initial; /* Resets clipping so the background fills the whole box */
+  background-clip: initial;
+  color: white !important; /* Forces the icon color to white */
+  border-color: transparent; /* Makes the gradient fill the entire space */
+}
