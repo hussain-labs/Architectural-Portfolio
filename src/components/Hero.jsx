@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 // An array of titles to cycle through
 const titles = [
   "Ar Zainab Usama",
-  "a Architecture",
+  "a Architector",
   "a Interior and Exterior Designer",
   "a Lifelong Learner",
 ];

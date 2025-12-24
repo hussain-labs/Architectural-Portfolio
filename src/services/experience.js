@@ -11,14 +11,14 @@ const experiences = [
 //     ],
 //   },
   {
-    title: "Junior Developer",
-    company: "Success Sahiwal Community",
-    period: "March 2025 – Present",
+    title: "Architector",
+    company: "Interior & Exterior Designer",
+    period: "2017-Present",
     responsibilities: [
-      "Collaborated in a team environment on real-world projects.",
-      "Worked on frontend development with React.js and Next.js.",
-      "Integrated APIs and deployed apps on cloud platforms.",
-      "Improved debugging and performance optimization in live apps.",
+      "Experienced architect with 8 years in designing innovative and sustainable buildings.",
+      "Skilled in architectural concept design, 3D modeling, and BIM development.",
+      "Proficient in preparing construction drawings, documentation, and managing project approvals.",
+      "Experienced in coordinating multidisciplinary teams and ensuring successful project delivery.",
     ],
   },
 ];
