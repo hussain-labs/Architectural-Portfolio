@@ -58,30 +58,13 @@ const Footer = () => {
                      opacity-0 section-item-animate"
           style={{ animationDelay: '500ms' }}
         >
-          <h3 className="text-xl font-semibold mb-4 text-gradient-static">Latest Projects</h3>
-          <div className="space-y-4 w-full">
-            {latestProjects.slice().reverse().map((project, i) => (
-              <div 
-                key={i} 
-                className="flex flex-row gap-4 items-center text-start group opacity-0 section-item-animate"
-                style={{ animationDelay: `${600 + i * 150}ms` }}
-              >
-                <img
-                  className="w-24 h-16 object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
-                  src={project.image}
-                  alt={project.name}
-                />
-                <div>
-                  {/* --- Change #2: Added hover-text-gradient to project titles --- */}
-                  <a href={project.live} target="_blank" rel="noopener noreferrer" className="block hover:underline font-bold text-white hover-text-gradient">
-                    {project.name}
-                  </a>
-                  <p className="text-[14px] text-gray-300">{project.desc}</p>
-                </div>
+          <h3 className="text-xl font-semibold mb-4 text-gradient-static">Core Values</h3>
+               <p className="text-gray-400">ArZainabUsama is driven by a commitment to purposeful design, professional integrity, and innovative architectural solutions.
+We prioritize sustainability, precision, and collaboration to deliver functional, aesthetically refined spaces tailored to client needs.</p>
+               
               </div>
-            ))}
-          </div>
-        </div>
+            
+          
       </div>
 
       {/* Bottom Copyright */}

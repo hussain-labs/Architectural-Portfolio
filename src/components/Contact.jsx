@@ -1,7 +1,8 @@
 import React from "react";
-import { Mail, Phone, Linkedin, Github } from "lucide-react";
-import { FaUpwork, FaStackOverflow } from "react-icons/fa6";
+import { Mail, Phone, Linkedin, Github, Facebook } from "lucide-react";
+import {  FaInstagram , FaWhatsapp } from "react-icons/fa6";
 import ContactForm from "./ContactForm";
+import { FaTiktok } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -34,8 +35,8 @@ const Contact = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3 text-gray-700">
               <Mail className="w-6 h-6 text-blue-500" />
-              <a href="abdurrehman123765@gmail.com" className="text-gradient-static hover:underline">
-                abdurrehman123765@gmail.com
+              <a href="arzainabusama@gmail.com" className="text-gradient-static hover:underline">
+                arzainabusama@gmail.com
               </a>
             </div>
             <div className="flex items-center space-x-3 text-gray-700">
@@ -48,17 +49,17 @@ const Contact = () => {
           <div className="flex space-x-4 mt-2">
             
             {/* --- ONLY THESE ICONS ARE CHANGED --- */}
-            <a href="https://www.linkedin.com/in/muzamil-hussain-990691375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="w-12 h-12 p-2 rounded-md social-icon-themed transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg hover:-translate-y-1" />
+            <a href="https://wa.me/923046475042" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp  className="w-12 h-12 p-2 rounded-md social-icon-themed transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg hover:-translate-y-1" />
             </a>
-            <a href="https://github.com/muzamilhussain33" target="_blank" rel="noopener noreferrer">
-              <Github className="w-12 h-12 p-2 rounded-md social-icon-themed transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg hover:-translate-y-1" />
+            <a href="https://www.instagram.com/ar.zainabusama?igsh=MW11bzA1cHR1cXFtMQ==" target="_blank" rel="noopener noreferrer">
+              <FaInstagram  className="w-12 h-12 p-2 rounded-md social-icon-themed transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg hover:-translate-y-1" />
             </a>
-            <a href="https://stackoverflow.com/users/30405022/muzamil-hussain" target="_blank" rel="noopener noreferrer">
-              <FaStackOverflow className="w-12 h-12 p-2 rounded-md social-icon-themed transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg hover:-translate-y-1" />
+            <a href="https://www.tiktok.com/@ar.zainab.usama?_t=ZN-90xTGA0cLZu&_r=1" target="_blank" rel="noopener noreferrer">
+              <FaTiktok className="w-12 h-12 p-2 rounded-md social-icon-themed transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg hover:-translate-y-1" />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <FaUpwork className="w-12 h-12 p-2 rounded-md social-icon-themed transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg hover:-translate-y-1" />
+            <a href="https://www.facebook.com/share/1APbHMPU49/" target="_blank" rel="noopener noreferrer">
+              <Facebook className="w-12 h-12 p-2 rounded-md social-icon-themed transition-all duration-300 ease-in-out cursor-pointer hover:shadow-lg hover:-translate-y-1" />
             </a>
 
           </div>
